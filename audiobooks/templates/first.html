@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>audio library</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="" />
+    </head>
+    <body>
+        <h1>Welcome to the Audio Library</h1>
+        <p>Here you can find a collection of audiobooks.</p>
+        <ul>
+            {% for book in books %}
+            <li>{{ book.title }} by {{ book.author }}</li>
+            {% endfor %}
+        </ul>
+
+        <footer>
+            <p>&copy; 2023 Audio Library</p>
+        </footer>
+    </body>
+</html>
